@@ -1,92 +1,138 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<title>吉林桓轩科技有限公司</title>
-<meta name="description" content="吉林桓轩科技有限公司">
-<meta name="keywords" content="吉林,信息安全,网络安全,">
-<link rel="stylesheet" type="text/css" href="./css/main1.css">
-<link rel="stylesheet" type="text/css" href="./css/animation.css">
-<link rel="stylesheet" type="text/css" href="./css/animate.min.css">
-<script type="text/javascript" src="./js/jquery-2.1.3.min.js"></script>
-<script type="text/javascript" src="./js/jquery.SuperSlide.2.1.1.js"></script>
-<script type="text/javascript" src="./js/jquery.zoomImgRollover.js"></script>
-
-<!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
-<meta>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <title>吉林桓轩科技有限公司</title>
+    <meta name="description" content="吉林桓轩科技有限公司，网络空间安全的第一道和最后一道防线，您身边的安全专家！">
+    <meta name="keywords" content="吉林信息安全,长春信息安全,吉林网络安全,长春网络安全">
+    <link rel="stylesheet" type="text/css" href="./css/main1.css">
+    <link rel="stylesheet" type="text/css" href="./css/animation.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+    <script type="text/javascript" src="./js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="./js/jquery.zoomImgRollover.js"></script>
+    <link rel="shortcut icon" href="./img/favicon.ico">
 </head>
 <body>
 	<!-- 头部 -->
 	<!-- 导航条
-================================================== --><style>
-​        .s-con ul li {
-​            float: left;
-​            width: 18%;
-​            height: 420px;
-​            margin: 0 1%;
-​            list-style: none;
-​        }
-​    
+================================================== -->
+<style>
+    .head {
+        width: 100%;
+        height: 76px;
+        /* position: absolute; */
+        position: fixed;
+        z-index: 888;
+        overflow: hidden;
+         left: 0%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .menu a {
+        line-height: 30px;
+        color: #fff;
+        font-size: 14px;
+        margin: 0px 35px;
+        /*font-weight: 600;*/
+    }
+</style>
+<div class="head">
+    <div class="logo"><a href="http://www.haxmation.com/" target="_blank"><img src="./img/logo.png"></a></div>
+    <div class="head-con">
+        <div class="menu">
+            <a href="./index.html" target="_self">首页</a>
+            <a href="#services" target="_self">服务领域</a>
+            <a href="#partners" target="_self">合作伙伴</a>
+            <a href="#customer" target="_self">校企合作</a>
+            <a href="./about.html" target="_self">关于我们</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+<script>
+    $(function(){
+      var url=window.location.pathname+window.location.search;
+
+        $('.menu').find("a[href='" + url + "']").addClass("cur");
+    })
+</script>
+
+
+	<!-- /头部 -->
+	
+	<!-- 主体 -->
+	 
+    <style>
+        .s-con ul li {
+            float: left;
+            width: 18%;
+            height: 420px;
+            margin: 0 1%;
+            list-style: none;
+        }
+
         .word-con {
-    
+
             background: none;
         }
-    
+
         .con-li {
             color: white;
-    
+
         }
-    
+
         .word-con-1 {
             height: 50px;
         }
-    
+
         .con-li {
             float: left;
             width: 50%;
         }
-    
+
         .zww {
             line-height: 45px;
         }
-    
+
         .zww span {
             font-size: 46px;
             font-weight: bold;
             letter-spacing: 9px;
         }
-    
+
         .eww {
             font-size: 16px;
             line-height: 23px;
             text-align: left;
             text-transform: uppercase;
         }
-    
+
         .zhzj {
             font-size: 46px;
             font-weight: bold;
             letter-spacing: 9px;
         }
-    
+
         .img_li {
             height: 235px;
             border: 1px solid #8f8f8f;
             padding: 15px 0px;
         }
-    
+
         .img_div {
             float: left;
             width: 33%;
             border-right: 1px solid #8f8f8f;
         }
-    
+
         .img_div:last-child {
-    
+
         }
-    
+
         .bottom_lanle {
             width: 90%;
             height: 65px;
@@ -96,27 +142,27 @@
             line-height: 65px;
             font-size: 29px;
         }
-    
+
         .img_li {
             animation-delay: 1s;
             -webkit-animation-delay: 1s; /* Safari 和 Chrome */
         }
-    
+
         .word-con-1 {
             animation-delay: 1s;
             -webkit-animation-delay: 1s; /* Safari 和 Chrome */
         }
-    
+
         .hinge-p1 {
             animation-delay: 1.1s;
             -webkit-animation-delay: 1.1s; /* Safari 和 Chrome */
         }
-    
+
         .img11 {
             animation-delay: 1.3s;
             -webkit-animation-delay: 1.3s; /* Safari 和 Chrome */
         }
-    
+
         .loadMore{
             position: absolute;
             bottom: 0px;
@@ -128,7 +174,93 @@
             color: #fff;
             margin-top: -29px;
         }
-    </style><style>
+    </style>
+    <!--page0111111-->
+    <div class="banner" style="position: relative">
+        <div id="slideBox" class="slideBox">
+            <!--
+                        <div class="hd">
+                            <ul><li></li><li></li><li></li></ul>
+                        </div>
+            -->
+            <div class="bd">
+                <ul style="position: relative; width: 100%; height: 100%;">
+                    <li style="position: absolute; width: 100%; left: 0px; top: 0px;">
+                        <div class="li-img" style=" background: url(img/page01.jpg) no-repeat center; background-size: cover;">
+                        </div>
+                        <div class="li-word" >
+                            <div class="word-con">
+                                <div class="word-con-1 bounceInDown animated bounce">
+                                    <div class="con-li zww">
+                                        <span>磨砺十五年</span>
+                                    </div>
+                                    <div class="con-li eww">
+                                        <p class="hinge-p1 animated bounce rollIn">Honed for fifteen years</p>
+                                        <p class="hinge-p2 ">Information security expert</p>
+                                    </div>
+                                </div>
+                                <div class="con-li zhzj" style=" width: 100%; margin-top: -20px;">
+                                    <span>您身边的信息安全专家</span>
+                                </div>
+                                <div class="con-li img_li   animated bounce" style="width: 100%;">
+                                    <div class="img_div ">
+                                        <a target="_blank"><img class=" img11 fadeInLeft bounce animated   " src="./img/banner-one2.png">
+                                            <p class="asfwege3wrgh">
+                                                渗透测试</p>
+                                        </a>
+                                    </div>
+                                    <div class="img_div">
+                                        <a target="_blank"> <img class=" animated " src="./img/banner-one2.png">
+                                            <p class="asfwege3wrgh">
+                                                运维保障</p>
+                                        </a>
+                                    </div>
+                                    <div class="img_div " style="   border-right: 0px solid #8f8f8f;">
+                                        <a target="_blank"> <img class="img11 fadeInRight bounce animated  " src="./img/banner-one2.png">
+                                            <p class="asfwege3wrgh">
+                                                溯源取证</p>
+                                        </a>
+                                    </div>
+                                    <div class="bottom_lanle" style="width: 90%">
+                                        覆盖信息安全完整生命周期的服务商
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a class="loadMore fadeInDown  animated infinite" href="./index.html#"><img style="width: 40px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTA0MTc1NzkyOTIzIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjIxNzEiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNzgzLjIyOCA2NjYuOTg3TDU1MS42MjMgOTA4LjU0OWwtNDAuMjc5IDQyLjAxNi00MC4yNzgtNDIuMDE2LTIzMS42MjktMjQxLjU2MmMtNS41NTktNS44MDItNS41NTktMTUuMjA3IDAtMjEuMDA5bDIwLjE1MS0yMS4wMDdjNS41Ni01Ljc5OSAxNC41NjktNS43OTkgMjAuMTUxIDBsMjMxLjYwNiAyNDEuNTYyTDc0Mi45NSA2MjQuOTcyYzUuNTYtNS43OTkgMTQuNTY5LTUuNzk5IDIwLjEyOSAwbDIwLjE0OSAyMS4wMDdjNS41NjEgNS44MDIgNS41NjEgMTUuMjA2IDAgMjEuMDA4ek01MTIuMjY1IDUzNi4zMDhjLTM0LjQ3NiAwLTYyLjQyOC0yNy44MjEtNjIuNDI4LTYyLjExOSAwLTM0LjMyNSAyNy45NTItNjIuMTQ0IDYyLjQyOC02Mi4xNDQgMzQuNDc4IDAgNjIuNDMgMjcuODE5IDYyLjQzIDYyLjE0NCAwIDM0LjI5OC0yNy45NTEgNjIuMTE5LTYyLjQzIDYyLjExOXogbTAtMjM0LjcyOGMtMjYuODA3IDAtNDguNTM5LTIxLjY0NC00OC41MzktNDguMzQxIDAtMjYuNjc4IDIxLjczMi00OC4zMjEgNDguNTM5LTQ4LjMyMSAyNi44MzIgMCA0OC41NjMgMjEuNjQzIDQ4LjU2MyA0OC4zMjEgMCAyNi42OTctMjEuNzMxIDQ4LjM0MS00OC41NjMgNDguMzQxeiBtMC0xNjUuNzA2Yy0xOS4xMzggMC0zNC42NzQtMTUuNDQ5LTM0LjY3NC0zNC41MjEgMC0xOS4wNzQgMTUuNTM2LTM0LjUyMSAzNC42NzQtMzQuNTIxIDE5LjE2MiAwIDM0LjY5NyAxNS40NDcgMzQuNjk3IDM0LjUyMSAwLjAwMSAxOS4wNzItMTUuNTM1IDM0LjUyMS0zNC42OTcgMzQuNTIxeiIgcC1pZD0iMjE3MiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjwvc3ZnPg=="></a>
+
+        <script type="text/javascript">
+
+            $('.img_div img').hover(function(){
+
+                $('.img_div img').removeClass('img11');
+                $('.img_div img').removeClass('fadeInLeft  bounce');
+                $('.img_div img').removeClass('fadeInRight bounce');
+                $(this).addClass('shake bounce');
+            },function(){
+                $('.img_div img').removeClass('shake bounce');
+            });
+            setTimeout(function () {
+                $('.hinge-p1').removeClass('hinge');
+                $('.hinge-p1').addClass('rollIn');
+            }, 3500);
+            $('.loadMore').click(function(){
+                var  offsetTop=$('.page-title').offset();
+                $('html, body').animate({
+                    scrollTop:offsetTop.top-190
+                }, 2000);
+            })
+            jQuery(".slideBox").slide({mainCell: ".bd ul", effect: "fold", autoPlay: true});
+        </script>
+    </div>
+    <!--page01 end-->
+
+    <!--小程序-->
+    <style>
         .page02_x {
             width: 100%;
             height: 971px;
@@ -136,11 +268,11 @@
             overflow: hidden;
             position: relative;
             background-color: transparent;
-            background:  url(./image/xcx_bg.png) no-repeat center;
+            background:  url(./img/xcx_bg.png) no-repeat center;
             background-size: cover;
         }
         .page02_x_head{
-    
+
             height: 120px;
             background: #121212;
         }
@@ -170,14 +302,14 @@
             transition: 0.5s;
             font-family: "Adobe 黑体 Std R";
             font-size: 40px;
-            color: #00a651;
+            color: #0095e2;
         }
         .label_bottom{
             transition: 1s;
             display: block;
             color: #808080;
         }
-    
+
         /**/
         .page-title-2{
             font-size: 36px;
@@ -198,7 +330,7 @@
         .s-con-xcx{
             width: 80%;
             margin:  0 auto;
-    
+
         }
         .s-con-xcx::after{
             content: "";
@@ -236,92 +368,153 @@
         }
     </style>
     <!--page02-->
-    <div class="page02_x">
+    <div class="page02_x" id="services">
         <div class="page02_x_head">
             <div style="height: 20px"></div>
             <div class="page02_x_head_label">
-                <div class="page02_x_head_label_1">
-                    <span class="label_heiti" style="transform: translateY(0px); width: 460px;">吉林桓轩科技有限公司</span>
-                    <p class="label_bottom" style="transform: translateX(0px); opacity: 1; width: 460px; height: 25px;">网络空间安全的第一道与最后一道防线</p>
+                <div class="page02_x_head_label_1"style="    width: 20%;">
+                    <span class="label_Impat">专</span><span class="label_heiti">注</span>
+                    <p class="label_bottom">工匠精神，潜心钻研</p>
+                </div>
+                <div class="page02_x_head_label_1"style="    width: 20%;">
+                    <span class="label_Impat">15+ </span><span class="label_heiti">年</span>
+                    <p class="label_bottom">15年专注信息安全</p>
+                </div>
+                <div class="page02_x_head_label_1"style="    width: 20%;">
+                    <span class="label_Impat">专</span> <span class="label_heiti">业</span>
+                    <p class="label_bottom">全生命周期解决方案</p>
+                </div>
+                <div class="page02_x_head_label_1" style="    width: 20%;">
+                    <span class="label_Impat">99.99</span> <span class="label_heiti">%</span>
+                    <p class="label_bottom">竭尽所能，做到更好</p>
+                </div>
+
+                <div class="page02_x_head_label_1" style="    width: 20%;">
+                    <span class="label_Impat">诚</span> <span class="label_heiti">信</span>
+                    <p class="label_bottom">客户信赖，放心可靠</p>
                 </div>
             </div>
+
         </div>
         <div class="page02_x-con">
             <h2 class="page-title">
                 <span class="page-title-1">服务领域</span> <span class="page-title-2">SERVICE FIELD</span>
-               <p class="page-title-3">专注网络空间安全服务20年，我们一直在您身边！</p>
+               <p class="page-title-3">网络空间安全的第一道与最后一道防线，我们一直在您身边！</p>
+
             </h2>
             <div style="height: 105px"></div>
+
             <div class="s-con-xcx">
               <div class="x-row">
                    <div class="x-row-1">
-                       <img class="animated" src="./image/xcx_0.png">
+                       <img class="animated   " src="./img/xcx_0.png">
                    </div>
                   <p class="x-row-2">云安全</p>
                   <p class="x-row-3">360°防御，让云安全从此无死角</p>
+                  <ul class="x-row-4">
+                      <!--rotateInDownRight-->
+                      <li><a href="#" class="animated bounce  ">云平台安全</a></li>
+                      <li><a href="#" class="animated bounce  ">云租户安全</a></li>
+                      <li><a href="#" class="animated bounce  ">智能梳理资产</a></li>
+                      <li><a href="#" class="animated bounce  ">全面监控风险</a></li>
+                      <li><a href="#" class="animated bounce  ">常态化安全运营</a></li>
+                      <li><a href="#" class="animated bounce  ">资产&漏洞集成管理</a></li>
+                  </ul>
+                </div>
+              <div class="x-row">
+                  <div class="x-row-1">
+                    <img class="animated   " src="./img/xcx_1.png">
                   </div>
-                <div class="x-row">
-                    <div class="x-row-1">
-                        <img class="animated" src="./image/xcx_1.png">
-                    </div>
-                    <p class="x-row-2">移动安全</p>
-                    <p class="x-row-3">让每一个小程序都能放心使用</p>
+                  <p class="x-row-2">代码安全</p>
+                  <p class="x-row-3">每一段代码都不再有缺陷</p>
+                  <ul class="x-row-4">
+                      <li><a href="#" class="animated bounce  ">威胁建模</a></li>
+                      <li><a href="#" class="animated bounce  ">静态分析</a></li>
+                      <li><a href="#" class="animated bounce  ">动态检测</a></li>
+                      <li><a href="#" class="animated bounce  ">沉淀安全架构</a></li>
+                      <li><a href="#" class="animated bounce  ">代码级漏洞详情信息</a></li>
+                      <li><a href="#" class="animated bounce  ">研发与测试阶段联动</a></li>
+                  </ul>
                 </div>
                 <div class="x-row">
                     <div class="x-row-1">
-                        <img class="animated" src="./image/xcx_2.png">
+                    <img class="animated   " src="./img/xcx_2.png">
                     </div>
-                    <p class="x-row-2">应用安全</p>
-                    <p class="x-row-3">从源头解决问题，拒绝堆砌安全产品</p>
+                    <p class="x-row-2">业务安全</p>
+                    <p class="x-row-3">攻击者视角，构建精准防护体系</p>
+                    <ul class="x-row-4">
+                        <li><a href="#" class="animated bounce  ">攻击认知</a></li>
+                        <li><a href="#" class="animated bounce  ">发现威胁</a></li>
+                        <li><a href="#" class="animated bounce  ">追踪溯源</a></li>
+                        <li><a href="#" class="animated bounce  ">深度洞察</a></li>
+                        <li><a href="#" class="animated bounce  ">优化已有安全配置</a></li>
+                        <li><a href="#" class="animated bounce  ">针对解读攻击事件</a></li>
+                    </ul>
                 </div>
                 <div class="x-row">
                     <div class="x-row-1">
-                        <img class="animated" src="./image/xcx_3.png">
+                    <img class="animated   " src="./img/xcx_3.png">
                     </div>
                     <p class="x-row-2">工控安全</p>
-                    <p class="x-row-3">中国制造2025，我们一起努力</p>
-                    </div>
+                    <p class="x-row-3">保障“工业4.0”，安全没有遗漏</p>
+                    <ul class="x-row-4">
+                        <li><a href="#" class="animated bounce  ">威胁感知</a></li>
+                        <li><a href="#" class="animated bounce  ">防护保障</a></li>
+                        <li><a href="#" class="animated bounce  ">监测审计</a></li>
+                        <li><a href="#" class="animated bounce  ">产品专业部署</a></li>
+                        <li><a href="#" class="animated bounce  ">常见协议支持</a></li>
+                        <li><a href="#" class="animated bounce  ">全行业解决方案</a></li>
+                    </ul>
+                </div>
                 <div class="x-row">
                     <div class="x-row-1">
-                        <img class="animated" src="./image/xcx_4.png">
+                    <img class="animated   " src="./img/xcx_4.png">
                     </div>
                     <p class="x-row-2">人才培养</p>
-                    <p class="x-row-3">网络安全为人民,网络安全靠人民</p>
-                    </div>
-                    </div>
-                    <div id="s-con-bot_w">
-                    </div>
-                    </div>
-                    </div>
-                    <!--page02 end--><script>
-​        var cur_top= 0,t=0;
-​        var a=$('.x-row-4 li a');
-​       $(window).scroll(function(){
-​            docu=$(window).scrollTop(); //socroll 的距离顶部的高
-​           var cur_top= $('.page02_x').offset();//当前div 距离顶部的高
-​           var pm=$(window).height(); //当前屏幕高度
-​           if(docu>(cur_top.top)-pm){
-​               if(t<=docu){
-​                   $('.label_Impat').css("transform","translateY(20px)");
-​                   $('.label_heiti').css("transform","translateY(-20px)");
-​                   $('.label_bottom').css("transform","translateX(-20px)");
-​                   $('.label_bottom').css("opacity","0");
-​               }
-​               else{
-​                   $('.label_Impat').css("transform","translateY(-20px)");
-​                   $('.label_heiti').css("transform","translateY(20px)");
-​                   $('.label_bottom').css("transform","translateX(20px)");
-​                   $('.label_bottom').css("opacity","0");
-​               }
-​               t = docu;
-​               setTimeout(function(){
-​                   $('.label_Impat').css("transform","translateY(0px)");
-​                   $('.label_heiti').css("transform","translateY(0px)");
-​                   $('.label_bottom').css("transform","translateX(0px)");
-​                   $('.label_bottom').css("transform","translateX(0px)");
-​                   $('.label_bottom').css("opacity","1");
-​               },500)
-​    
+                    <p class="x-row-3">网络安全为人民，网络安全靠人民</p>
+                    <ul class="x-row-4">
+                        <li><a href="#" class="animated bounce  ">专业课程</a></li>
+                        <li><a href="#" class="animated bounce  ">模块化搭建</a></li>
+                        <li><a href="#" class="animated bounce  ">阶段性培养</a></li>
+                        <li><a href="#" class="animated bounce  ">校企合作</a></li>
+                        <li><a href="#" class="animated bounce  ">师资团队建设</a></li>
+                        <li><a href="#" class="animated bounce  ">针对性课程设计</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="s-con-bot_w"></div>
+        </div>
+    </div>
+    <!--page02 end-->
+    <script>
+        var cur_top= 0,t=0;
+        var a=$('.x-row-4 li a');
+       $(window).scroll(function(){
+            docu=$(window).scrollTop(); //socroll 的距离顶部的高
+           var cur_top= $('.page02_x').offset();//当前div 距离顶部的高
+           var pm=$(window).height(); //当前屏幕高度
+           if(docu>(cur_top.top)-pm){
+               if(t<=docu){
+                   $('.label_Impat').css("transform","translateY(20px)");
+                   $('.label_heiti').css("transform","translateY(-20px)");
+                   $('.label_bottom').css("transform","translateX(-20px)");
+                   $('.label_bottom').css("opacity","0");
+               }
+               else{
+                   $('.label_Impat').css("transform","translateY(-20px)");
+                   $('.label_heiti').css("transform","translateY(20px)");
+                   $('.label_bottom').css("transform","translateX(20px)");
+                   $('.label_bottom').css("opacity","0");
+               }
+               t = docu;
+               setTimeout(function(){
+                   $('.label_Impat').css("transform","translateY(0px)");
+                   $('.label_heiti').css("transform","translateY(0px)");
+                   $('.label_bottom').css("transform","translateX(0px)");
+                   $('.label_bottom').css("transform","translateX(0px)");
+                   $('.label_bottom').css("opacity","1");
+               },500)
+
            }
 
 
@@ -344,14 +537,14 @@
 
 
                 $('.x-row-1 img').addClass('bounce');
-    
+
                setTimeout(function(){
                    $('.x-row-1 img').removeClass('bounce');
                },500)
            }
-    
+
        });
-    
+
         function  doTimeout(aa,i,t){
             setTimeout(function(){
                 $(aa).addClass('rotateInDownLeft');
@@ -359,180 +552,426 @@
         }
 
 
-    </script><!-- /主体 -->
-	
+    </script>
+
+    <!--page03-->
+    <div class="page03" id="partners">
+        <div class="li-img02" style=" background: url(./img/page03.jpg) no-repeat center;"></div>
+        <div class="page03-con">
+            <h2 class="page-title">
+                <img src="./img/c.png">
+            </h2>
+            <p class="p1">我们已经与一些了不起的朋友合作</p>
+            <p class="p2">他们即是用户也是合作伙伴！</p>
+        </div>
+        <div class="c-con">
+            <ul>
+                <li>
+                        <div class="port-3 effect-2">
+                            <div class="image-box1">
+                                <img style=" width: 381px; height: 228px;" src="./img/case1.jpg" alt="Image-2">
+                            </div>
+                            <div class="text-desc1">
+                                <h3 class="case-title">东北电网</h3>
+                                <p class="p-line"></p>
+
+                            </div>
+                        </div>
+                    </li><li>
+                        <div class="port-3 effect-2">
+                            <div class="image-box1">
+                                <img style=" width: 381px; height: 228px;" src="./img/case2.jpg" alt="Image-2">
+                            </div>
+                            <div class="text-desc1">
+                                <h3 class="case-title">中国石油东北公司</h3>
+                                <p class="p-line"></p>
+                            </div>
+                        </div>
+                    </li><li>
+                        <div class="port-3 effect-2">
+                            <div class="image-box1">
+                                <img style=" width: 381px; height: 228px;" src="./img/case3.jpg" alt="Image-2">
+                            </div>
+                            <div class="text-desc1">
+                                <h3 class="case-title">中国水电集团安全实验室</h3>
+                                <p class="p-line"></p>                            
+                            </div>
+                        </div>
+                    </li><li>
+                        <div class="port-3 effect-2">
+                            <div class="image-box1">
+                                <img style=" width: 381px; height: 228px;" src="./img/case4.jpg" alt="Image-2">
+                            </div>
+                            <div class="text-desc1">
+                                <h3 class="case-title">东北新闻网</h3>
+                                <p class="p-line"></p>
+                            </div>
+                        </div>
+                    </li><li>
+                        <div class="port-3 effect-2">
+                            <div class="image-box1">
+                                <img style=" width: 381px; height: 228px;" src="./img/case5.jpg" alt="Image-2">
+                            </div>
+                            <div class="text-desc1">
+                                <h3 class="case-title">大连华信</h3>
+                                <p class="p-line"></p>
+                            </div>
+                        </div>
+                    </li><li>
+                        <div class="port-3 effect-2">
+                            <div class="image-box1">
+                                <img style=" width: 381px; height: 228px;" src="./img/case6.jpg" alt="Image-2">
+                            </div>
+                            <div class="text-desc1">
+                                <h3 class="case-title">漏洞银行</h3>
+                                <p class="p-line"></p>
+                            </div>
+                        </div>
+                    </li><li>
+                        <div class="port-3 effect-2">
+                            <div class="image-box1">
+                                <img style=" width: 381px; height: 228px;" src="./img/case7.jpg" alt="Image-2">
+                            </div>
+                            <div class="text-desc1">
+                                <h3 class="case-title">i春秋</h3>
+                                <p class="p-line"></p>
+                            </div>
+                        </div>
+                    </li><li>
+                        <div class="port-3 effect-2">
+                            <div class="image-box1">
+                                <img style=" width: 381px; height: 228px;" src="./img/case8.jpg" alt="Image-2">
+                            </div>
+                            <div class="text-desc1">
+                                <h3 class="case-title">看雪学院</h3>
+                                <p class="p-line"></p>
+                            </div>
+                        </div>
+                    </li>               
+            </ul>
+            <div class="clear"></div>
+        </div>
+    <!--    <a href="#" target="_blank" class="a-case">查看更多</a>-->
+    </div>
+    <!--page03 end-->
+
+    <!--page05-->
+    <div class="page05" id="customer">
+        <div class="li-img04" style=" background: url(img/page05.jpg) no-repeat center;"></div>
+        <div class="page05-con">
+            <h2 class="page-title">
+                <img src="./img/a.png">
+            </h2>
+            <p class="p1">我们最大的使命就是让学校的选择变得坚定和正确，</p>
+            <p class="p2">为学生创造最大的价值从而实现自己的价值！</p>
+        </div>
+        <div class="cus-con">
+            <div class="cus-left">
+                <div class="left01">
+                    <p class="p2">专业的讲师团队</p>
+                    <p class="p2">快速的课程更新</p>
+                    <p class="p2">灵活的合作模式</p>
+                    <p class="p2">创新的教学方法</p> 
+              
+                </div>
+                <div class="left02">
+                    <p class="p2">4个学习阶段</p>
+                    <p class="p2">8个就业岗位</p>
+                    <p class="p2">12门专项课程</p>
+                    <p class="p2">100+个配套实验</p>
+                </div>
+                <div class="left03">
+                        <p class="p2">10+年校企合作经验</p>
+                        <p class="p2">300+小时信息安全课程</p>
+                        <p class="p2">500+名学生对口就业</p>
+                        <p class="p2">3000+小时教学授课经验</p>
+                </div>
+            </div>
+            <div class="cus-right">
+                <ul id="iconWall">
+                    <li>
+                        <div class="img-3d">
+                            <div class="img-back" style="background: #fff url(./img/c-logo01.jpg) no-repeat center;"></div>
+                            <div class="img-front" style="background: #fff url(./img/) no-repeat center;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-3d">
+                            <div class="img-back" style="background: #fff url(./img/) no-repeat center;"></div>
+                            <div class="img-front" style="background: #fff url(./img/c-logo02.jpg) no-repeat center;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-3d">
+                            <div class="img-back" style="background: #fff url(./img/c-logo03.jpg) no-repeat center;"></div>
+                            <div class="img-front" style="background: #fff url(./img/) no-repeat center;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-3d">
+                            <div class="img-back" style="background: #fff url(./img/) no-repeat center;"></div>
+                            <div class="img-front" style="background: #fff url(./img/c-logo04.jpg) no-repeat center;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-3d">
+                            <div class="img-back" style="background: #fff url(./img/c-logo05.jpg) no-repeat center;"></div>
+                            <div class="img-front" style="background: #fff url(./img/) no-repeat center;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-3d">
+                            <div class="img-back" style="background: #fff url(./img/) no-repeat center;"></div>
+                            <div class="img-front" style="background: #fff url(./img/c-logo06.jpg) no-repeat center;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-3d">
+                            <div class="img-back" style="background: #fff url(./img/c-logo07.jpg) no-repeat center;"></div>
+                            <div class="img-front" style="background: #fff url(./img/) no-repeat center;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-3d">
+                            <div class="img-back" style="background: #fff url(./img/) no-repeat center;"></div>
+                            <div class="img-front" style="background: #fff url(./img/c-logo08.jpg) no-repeat center;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-3d">
+                            <div class="img-back" style="background: #fff url(./img/c-logo09.jpg) no-repeat center;"></div>
+                            <div class="img-front" style="background: #fff url(./img/) no-repeat center;"></div>
+                        </div>
+                    </li>
+                </ul>
+                <div id="btnRefresh">
+                    <div class="iconRefresh"></div>
+                    <span>换一批</span>
+                </div>
+                <div class="clear"></div>
+                <script type="text/javascript">
+                    window.onload = function () {
+                        var clickTimes = 1;
+
+                        //总列数
+                        var lineCount = 6;
+
+                        var btnRefresh = document.querySelector("#btnRefresh");
+                        var iconRefresh = document.querySelector(".iconRefresh")
+
+                        var img3DList = document.querySelectorAll(".img-3d");
+                        var len = img3DList.length;
+
+                        btnRefresh.onclick = function () {
+                            iconRefresh.style.transition = ".3s linear";
+                            iconRefresh.style.transform = "rotate(" + 360 * clickTimes + "deg)";
+
+                            for (var i = 0; i < len; i++) {
+
+                                var colNum = parseInt(i / lineCount);
+                                var rowNum = i % lineCount;
+                                var delayTime = (colNum + rowNum) * 100;
+
+
+                                img3DList[i].style.transition = ".3s " + delayTime + "ms linear";
+                                img3DList[i].style.transform = "rotateY(" + 180 * clickTimes + "deg)";
+                            }
+
+                            clickTimes++;
+                        }
+                    }
+                </script>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--page05 end-->
+
+
+
+
+
+	<!-- /主体 -->
+
 	<!-- 底部 -->
 	<style>
-	/*---foot---*/
-	.foot {
-	    width:100%;
-	    background:#212930;
-	}
-	.foot-con {
-	    width: 1200px;
-	    margin: 0 auto;
-	    padding-top: 32px;
-	}
-	.foot-con dl  {
-	    width: 15%;
-	    float: left;
-	    color: #fff;
-	    padding-left: 3%;
-	    /*	margin: 10px 96px;*/
-	}
-	.foot-con dl dt {
-	    font-size: 12px;
-	    font-weight: 600;
-	}
-	.foot-con dl dd a {
-	    font-size: 12px;
-	    color: #7a889c;
-	    line-height: 24px;
-	}
-	.foot-con dl dd a:hover {
-	    color: #36b7e6;
-	    transition: linear 0.3s;
-	}
-	.contact {
-	    width:100%;
-	    border-top: 1px solid #2c363f;
-	    margin-top: 24px;
-	}
-	.contact-con {
-	    width: 1200px;
-	    margin: 0 auto;
-	    padding: 32px 0;
-	}
-	.contact-con dl {
-	    width: 30.333%;
-	    padding-left: 3%;
-	    float: left;
-	    color: #7a889c;
-	    /*	margin: 0 70px;*/
-	}
-	.contact-con dl.location dd{
-	    font-size: 12px;
-	    line-height: 25px;
-	}
-	.contact-con dl.w-chat{
-	    text-align: center;
-	}
-	.contact-con dl dd.img-p {
-	    font-size: 14px;
-	    line-height: 30px;
-	    text-align: center;
-	}
-	.contact-con dl dt.call-p {
-	    font-size: 18px;
-	    margin-top: 32px;
-	}
-	.contact-con dl dd.call-n{
-	    font-size: 36px;
-	    font-style: italic;
-	    color: #e8de3a;
-	    line-height: 44px;
-	}
-	.contact-con dl dd.call-pho span{
-	    color: #e8de3a;
-	}
-	.footer {
-	    width: 100%;
-	    height: 68px;
-	    background: #1c2227;
-	}
-	.footer-con {
-	    width: 1200px;
-	    margin: 0 auto;
-	    padding-top: 18px;
-	}
-	.footer-con p {
-	    font-size: 12px;
-	    text-align: center;
-	    color: #7a889c;
-	}
-	/*---fix---*/
-	.footer-con {
-	    width: 1200px;
-	    margin: 0 auto;
-	    padding:  20px 0 1px 0;
-	}
-	.rwen ,.cqrww{
-	    text-align: left;
-	    display: inline-block;
-	    line-height: 25px;
-	    float: left;
-	    width: 49%;
-	    height: 50px;
-	    border: 1px solid  #2c363f;
-	    text-indent: 157px;
-	    color: #7a889c;
-	}
-	.cqrww{
-	    border-left: 0px;
-	}
-	.footer-con p {
-	    line-height: 25px;
-	}
-	
-	.call a{
-	    /*top: -9px;*/
-	    line-height: 22px;
-	    background: #2a84df url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNDkzODc2MjM2OTQ1IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjIzNzQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNOTIxLjYgNzQyLjRDOTIxLjYgODk2IDg1MS4yIDg5NiA1MTIgODk2Yy0zMzkuMiAwLTQwOS42IDAtNDA5LjYtMTUzLjZDMTAyLjQgNTc2IDI4OCAyNDMuMiA1MTIgMjQzLjIgNzM2IDI0My4yIDkyMS42IDU3NiA5MjEuNiA3NDIuNEw5MjEuNiA3NDIuNCA5MjEuNiA3NDIuNHpNNTEyIDMxMy42Yy05NiAwLTE3Mi44IDc2LjgtMTcyLjggMTcyLjggMCA5NiA3Ni44IDE3Mi44IDE3Mi44IDE3Mi44IDk2IDAgMTcyLjgtNzYuOCAxNzIuOC0xNzIuOEM2ODQuOCAzOTAuNCA2MDggMzEzLjYgNTEyIDMxMy42TDUxMiAzMTMuNiA1MTIgMzEzLjZ6TTE1My42IDQ0MS42YzcwLjQtMTE1LjIgMTkyLTIzNi44IDM1OC40LTIzNi44IDE2Ni40IDAgMzAwLjggMTM0LjQgMzU4LjQgMjM2LjggMzIgNTEuMiA4OS42IDQ0LjggMTE1LjIgMCAxOS4yLTMyIDcwLjQtMzIwLTQ3My42LTMyMC01NDQgMC00OTIuOCAyOTQuNC00NzMuNiAzMjBDNzYuOCA0OTIuOCAxNDAuOCA0NjcuMiAxNTMuNiA0NDEuNkwxNTMuNiA0NDEuNiAxNTMuNiA0NDEuNnoiIHAtaWQ9IjIzNzUiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48L3N2Zz4=) no-repeat 9px;
-	    background-size: 18%;
-	
-	}
-	.qq a{
-	    /*top: -9px;*/
-	    cursor: pointer;
-	    line-height: 22px;
-	    background: #2a84df url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNDkzODc3OTU1MjUxIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMwODgiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNMjczLjUxMDQgNDgwLjE3NDA4IDI3Mi4zMTIzMiA0NzYuNDQ2NzIgMjcxLjMzOTUyIDQ3MS42MDMyIDI3MC42OTQ0IDQ2OC45NTEwNCAyNzAuNjk0NCA0NjUuNjEyOCAyNzAuNjk0NCA0NjEuNjI5NDQgMjcwLjY5NDQgNDU4LjAyNDk2IDI3MS44NTE1MiA0NTMuNzI0MTYgMjczLjAyOTEyIDQ0OS4xNzc2IDI3NC41ODU2IDQ0NC40MDU3NiAyNzYuNjg0OCA0MzkuMDkxMiAyNzkuNDM5MzYgNDMzLjU3MTg0IDI4My4zMzA1NiA0MjguMDQyMjQgMjgzLjMzMDU2IDQyNC4xNzE1MiAyODMuNzA5NDQgNDIwLjU0NjU2IDI4NC4zMTM2IDQxNS42MjExMiAyODUuOTgyNzIgNDEwLjA4MTI4IDI4Ny41MTg3MiA0MDQuMTAxMTIgMjg4Ljc0NzUyIDQwMS4zNTY4IDI5MC4xNjA2NCAzOTguNzk2OCAyOTEuOTgzMzYgMzk1Ljk1MDA4IDI5My45Njk5MiAzOTMuODMwNCAyOTMuOTY5OTIgMzg5LjkzOTIgMjkzLjk2OTkyIDM4NS41NjY3MiAyOTMuOTY5OTIgMzgwLjE2IDI5NS4xMTY4IDM3My4xMTQ4OCAyOTYuMjczOTIgMzY0LjkzMzEyIDI5OC4zMzIxNiAzNTUuMTQzNjggMzAxLjE2ODY0IDM0NC45NTQ4OCAzMDMuMjc4MDggMzM5LjM1MzYgMzA1LjM2NzA0IDMzMy4yNjA4IDMwNy42NjA4IDMyNy41Nzc2IDMxMC40MDUxMiAzMjEuNDg0OCAzMTMuMjAwNjQgMzE0LjgxODU2IDMxNi40MTYgMzA4LjU3MjE2IDMyMC4wMzA3MiAzMDEuOTA1OTIgMzI0LjU4NzUyIDI5NS4yNDk5MiAzMjYuNjk2OTYgMjkxLjQzMDQgMzI4LjkzOTUyIDI4OC4zMDcyIDMzMy44MjQgMjgxLjI2MjA4IDMzOC44NTE4NCAyNzQuMjM3NDQgMzQ0LjU1NTUyIDI2Ny4wMDggMzUwLjY2ODggMjU5Ljk3MzEyIDM1Ny4zMDQzMiAyNTMuMDQwNjQgMzY0LjIyNjU2IDI0NS45MTM2IDM3Mi42MDI4OCAyMzguMjIzMzYgMzc3LjkxNzQ0IDIzMy41NDM2OCAzODQuMzk5MzYgMjI4LjQ5NTM2IDM5MC45NzM0NCAyMjQuMDQwOTYgMzk4LjA4IDIxOS43NjA2NCA0MDQuOTEwMDggMjE1Ljk1MTM2IDQxMi42MTA1NiAyMTIuNzk3NDQgNDIwLjc5MjMyIDIwOC45MTY0OCA0MjguOTIyODggMjA2LjI1NDA4IDQzNy4wMzI5NiAyMDMuNDg5MjggNDQ1Ljc5ODQgMjAwLjc0NDk2IDQ1NC41NTM2IDE5OC42NTYgNDYzLjc1OTM2IDE5Ni45MTUyIDQ3My4wOTgyNCAxOTUuNDA5OTIgNDgyLjMxNDI0IDE5NC4xODExMiA0OTEuNTIgMTkyLjkyMTYgNTAxLjM0MDE2IDE5Mi4zODkxMiA1MTAuNjc5MDQgMTkyLjM4OTEyIDUyMC4zMzUzNiAxOTIuMzg5MTIgNTMwLjM1MDA4IDE5Mi4zODkxMiA1NDAuMDE2NjQgMTkzLjYwNzY4IDU0OS43MzQ0IDE5NC43NjQ4IDU1OS42MzY0OCAxOTUuNzk5MDQgNTY4LjgzMiAxOTguMDEwODggNTc4LjUzOTUyIDIwMC4wNzkzNiA1ODcuNjUzMTIgMjAyLjQ1NTA0IDU5Ny42MzcxMiAyMDUuMTA3MiA2MDYuNzcxMiAyMDguMzQzMDQgNjE1LjUxNjE2IDIxMi4wMzk2OCA2MjQuODU1MDQgMjE1Ljk1MTM2IDYzMy4zNzQ3MiAyMjAuMjIxNDQgNjQxLjY1ODg4IDIyNC45NzI4IDY0OS43NzkyIDIzMC4yMDU0NCA2NTYuNzczMTIgMjM1LjA2OTQ0IDY2MC4wMTkyIDIzNy44MTM3NiA2NjMuNDE4ODggMjM5LjgyMDggNjY5LjkxMTA0IDI0NS4zMjk5MiA2NzUuMzc5MiAyNTAuNjU0NzIgNjgwLjgzNzEyIDI1Ni4xNjM4NCA2ODYuMTUxNjggMjYyLjI0NjQgNjkwLjUzNDQgMjY4LjE0NDY0IDY5NS43NTY4IDI3NC4yMzc0NCA2OTkuMzkyIDI4MC43ODA4IDcwMy4wNzg0IDI4Ni41OTcxMiA3MDYuOTkwMDggMjkzLjM2NTc2IDcxMC4yMzYxNiAyOTkuMjUzNzYgNzE1LjY5NDA4IDMxMS43MTU4NCA3MTguMzc2OTYgMzE4LjE1NjggNzIwLjQ3NjE2IDMyNC4xMjY3MiA3MjIuNTc1MzYgMzMwLjYwODY0IDcyNC40NTk1MiAzMzYuNzAxNDQgNzI1Ljc3MDI0IDM0MS45NDQzMiA3MjcuNDcwMDggMzQ4LjEwODggNzMwLjQ0OTkyIDM1OS4xMTY4IDczMi4zNTQ1NiAzNjguNzUyNjQgNzMzLjU5MzYgMzc4LjA3MTA0IDczNC42NTg1NiAzODUuNTY2NzIgNzM2LjMzNzkyIDM5Ni45ODQzMiA3MzYuNzE2OCAzOTguNzk2OCA3MzguMDU4MjQgNDAwLjg1NTA0IDc0MS42NzI5NiA0MDYuNzYzNTIgNzQzLjk5NzQ0IDQxMC43NjczNiA3NDYuMDU1NjggNDE0LjkzNTA0IDc0OC42NzcxMiA0MTkuMzk5NjggNzUwLjk5MTM2IDQyNC43NTUyIDc1Mi40OTY2NCA0MzAuMjMzNiA3NTQuMTM1MDQgNDM2LjI0NDQ4IDc1NS4zNzQwOCA0NDIuNDA4OTYgNzU1LjkzNzI4IDQ0NS40NCA3NTYuNDU5NTIgNDQ5LjE3NzYgNzU2LjQ1OTUyIDQ1Mi40MjM2OCA3NTUuOTM3MjggNDU1LjYzOTA0IDc1NS45MzcyOCA0NTkuNjQyODggNzU0Ljk5NTIgNDYzLjUyMzg0IDc1My4yNzQ4OCA0NzEuMDQgNzUxLjI5ODU2IDQ3NC44MzkwNCA3NDkuODM0MjQgNDc5LjEwOTEyIDc0OS44MzQyNCA0ODAuMTc0MDggNzUwLjUzMDU2IDQ4MS40OTUwNCA3NTIuNDk2NjQgNDg0LjYxODI0IDc2MS4wNTcyOCA0OTcuMjg1MTIgNzY3LjgxNTY4IDUwNi43OTgwOCA3NzEuMDUxNTIgNTEzLjE0Njg4IDc3NS40MTM3NiA1MjAuMDk5ODQgNzc5LjIxMjggNTI3LjcxODQgNzgzLjU5NTUyIDUzNS44NTkyIDc4Ny45NzgyNCA1NDUuMDEzNzYgNzkyLjkxMzkyIDU1NS4zNzY2NCA3OTUuNjk5MiA1NjEuNzI1NDQgNzk4LjIzODcyIDU2Ny45MzA4OCA4MDAuNDMwMDggNTc0LjQ3NDI0IDgwMi41OTA3MiA1ODAuMzYyMjQgODA0LjIzOTM2IDU4Ni41NDcyIDgwNS45MTg3MiA1OTIuMzUzMjggODA4LjAzODQgNjAzLjY3ODcyIDgwOS43MTc3NiA2MTUuMjQ5OTIgODEwLjg3NDg4IDYyNS41MTA0IDgxMC44NzQ4OCA2MzEuMTExNjggODEwLjg3NDg4IDYzNS43MTk2OCA4MTAuODc0ODggNjM5Ljk4OTc2IDgxMC4wOTY2NCA2NDUuMTIgODA4Ljk5MDcyIDY1My45Nzc2IDgwNy40NzUyIDY2MS45MzQwOCA4MDUuMTIgNjY5LjE1MzI4IDgwNC4yMzkzNiA2NzIuMDkyMTYgODAyLjU5MDcyIDY3NS42MzUyIDgwMS4yMTg1NiA2NzguMTAzMDQgNzk5LjM3NTM2IDY4MS4xNDQzMiA3OTcuNzU3NDQgNjgzLjA1OTIgNzk1LjY5OTIgNjg1LjUzNzI4IDc5My44NTYgNjg3LjUzNDA4IDc5MS44ODk5MiA2ODkuMjQ0MTYgNzg5LjUzNDcyIDY5MC4yNzg0IDc4Ny40MTUwNCA2OTEuMzEyNjQgNzg1LjY3NDI0IDY5MS44ODYwOCA3ODQuMTU4NzIgNjkxLjg4NjA4IDc4My4wMTE4NCA2OTEuODg2MDggNzgxLjMxMiA2OTEuMzEyNjQgNzc4LjA3NjE2IDY4OS43MTUyIDc3Ni41OTEzNiA2ODguNjUwMjQgNzc1LjAzNDg4IDY4Ny41MzQwOCA3NzMuMzM1MDQgNjg2LjAwODMyIDc3MS42MTQ3MiA2ODQuMjk4MjQgNzY4Ljc3ODI0IDY4MS4xNDQzMiA3NjUuNDE5NTIgNjc2LjY4OTkyIDc2Mi43Nzc2IDY3Mi4wOTIxNiA3NjAuMTM1NjggNjY4LjQxNiA3NTcuNTU1MiA2NjQuMTM1NjggNzUzLjkyIDY1Ni41Mzc2IDc0OS44MzQyNCA2NDguNjMyMzIgNzQ5LjM1Mjk2IDY0OC4zNTU4NCA3NDguNjc3MTIgNjQ4LjM1NTg0IDc0Ny4wMTgyNCA2NDkuNTk0ODggNzQ2LjA1NTY4IDY1MS42NzM2IDc0NC40NTgyNCA2NTQuMjU0MDggNzQxLjY3Mjk2IDY2MS45MzQwOCA3MzcuNDc0NTYgNjcyLjg2MDE2IDczMi4wOTg1NiA2ODYuMDA4MzIgNzI4LjA1Mzc2IDY5Mi41NjE5MiA3MjMuODE0NCA2OTkuNDAyMjQgNzE4Ljc3NjMyIDcwNy4wOTI0OCA3MTMuNDMxMDQgNzE0LjYxODg4IDcxMC42OTY5NiA3MTguMDI4OCA3MDcuMzc5MiA3MjEuNzQ1OTIgNjk5Ljc1MDQgNzI5LjI0MTYgNzAwLjQxNiA3MjkuOTE3NDQgNzAxLjQ1MDI0IDczMC45OTI2NCA3MDUuMjU5NTIgNzMzLjIyNDk2IDcyMS4xMzE1MiA3NDAuODUzNzYgNzI4LjA1Mzc2IDc0NC43NTUyIDczNC42NTg1NiA3NDguNTQ0IDc0MS4xOTE2OCA3NTMuMzE1ODQgNzQ3LjAxODI0IDc1OC4yMzEwNCA3NDkuODM0MjQgNzYwLjQ1MzEyIDc1MS45NTM5MiA3NjMuMDEzMTIgNzU0LjEzNTA0IDc2NS45ODI3MiA3NTUuOTM3MjggNzY5LjE5ODA4IDc1Ni45MTAwOCA3NzEuODcwNzIgNzU4LjA5NzkyIDc3NS4wNzU4NCA3NTguNjA5OTIgNzc3Ljg1MDg4IDc1OS4xNzMxMiA3ODEuMDg2NzIgNzU4LjYwOTkyIDc4My4yNTc2IDc1OC42MDk5MiA3ODUuNDU5MiA3NTguMDk3OTIgNzg3LjczMjQ4IDc1Ni45MTAwOCA3ODkuODExMiA3NTYuNDU5NTIgNzkxLjQzOTM2IDc1NS4zNzQwOCA3OTMuNDE1NjggNzUyLjQ5NjY0IDc5Ny4zMzc2IDc0OS44MzQyNCA4MDAuNDgxMjggNzQ3Ljc3NiA4MDIuODM2NDggNzQ2LjA1NTY4IDgwNC41NzcyOCA3NDEuNjcyOTYgODA3Ljc3MjE2IDczNi43MTY4IDgxMC41NTc0NCA3MzEuNDMyOTYgODEzLjIxOTg0IDcyNS43NzAyNCA4MTUuNzc5ODQgNzE5LjQ1MjE2IDgxOC4yNTc5MiA3MTYuMDUyNDggODE5LjI5MjE2IDcxMy4wNzI2NCA4MjAuMTMxODQgNzA1LjczMDU2IDgyMS44NDE5MiA2OTguMTUyOTYgODIzLjQ3MDA4IDY5MC41MzQ0IDgyNS4wODggNjgyLjI1MDI0IDgyNi40Mzk2OCA2NzMuNzEwMDggODI2Ljc5ODA4IDY2NC45NTQ4OCA4MjcuODUyOCA2NTYuMjkxODQgODI3Ljg1MjggNjQ3LjE3ODI0IDgyNy44NTI4IDYzNy43Nzc5MiA4MjcuODUyOCA2MjcuOTc4MjQgODI3LjI3OTM2IDYxOC44NTQ0IDgyNi40Mzk2OCA2MDkuMDEzNzYgODI1LjA4OCA1OTkuMjU1MDQgODI0LjA0MzUyIDU4OC45NzQwOCA4MjIuNjA5OTIgNTc5LjAxMDU2IDgyMC4xMzE4NCA1NjkuMjkyOCA4MTguMjU3OTIgNTU5LjYzNjQ4IDgxNS40OTMxMiA1NDkuNzM0NCA4MTEuOTUwMDggNTQwLjAxNjY0IDgwOS4wMjE0NCA1MzQuODk2NjQgODA3LjMxMTM2IDUzMC4zNTAwOCA4MDUuNjkzNDQgNTI3LjQ3MjY0IDgwNC41NzcyOCA1MjQuNjE1NjggODAzLjk3MzEyIDUyMC45Mzk1MiA4MDMuOTczMTIgNTE2LjUzNjMyIDgwMy45NzMxMiA1MDcuMTk3NDQgODAzLjMxNzc2IDUwMi40NzY4IDgwMi44MzY0OCA0OTYuMzk0MjQgODAyLjE2MDY0IDQ5Mi40OTI4IDgwNS42OTM0NCA0ODcuMTY4IDgwOS4wMjE0NCA0NzkuOTQ4OCA4MTIuNTMzNzYgNDcxLjk2MTYgODE2LjkxNjQ4IDQ2Ny4xMDc4NCA4MTkuMjkyMTYgNDYyLjAzOTA0IDgyMS4xNzYzMiA0NTAuODQ2NzIgODI1Ljc1MzYgNDQ0Ljc2NDE2IDgyNy4yNzkzNiA0MzguMzg0NjQgODI4Ljk5OTY4IDQyOS41MzcyOCA4MzAuNzIgNDIzLjk5NzQ0IDgzMS4xNTAwOCA0MTguMTQwMTYgODMxLjY1MTg0IDQxMi4wMjY4OCA4MzIuMzI3NjggNDA0LjkxMDA4IDgzMi41OTM5MiAzOTguMDggODMyLjU5MzkyIDM5MC45NzM0NCA4MzIuNTkzOTIgMzc1LjgzODcyIDgzMi41OTM5MiAzNTkuNDI0IDgzMi4zMjc2OCAzNDMuNDgwMzIgODMwLjcyIDMzNS40MTEyIDgyOS41NzMxMiAzMjcuNjE4NTYgODI4LjQxNiAzMjAuMDMwNzIgODI3LjI3OTM2IDMxMi40NDI4OCA4MjUuNzUzNiAzMDUuMzY3MDQgODIzLjQ3MDA4IDI5OC4zMzIxNiA4MjEuODQxOTIgMjkxLjk4MzM2IDgxOS4yOTIxNiAyODUuOTgyNzIgODE2LjkxNjQ4IDI4MC4zODE0NCA4MTQuMjQzODQgMjc1LjUxNzQ0IDgxMS4zMjU0NCAyNzAuNjk0NCA4MDcuNzcyMTYgMjY5LjA0NTc2IDgwNi4wNTE4NCAyNjYuODg1MTIgODAzLjk3MzEyIDI2NS4yNDY3MiA4MDIuMTYwNjQgMjYzLjc3MjE2IDgwMC4wNzE2OCAyNjIuNDEwMjQgNzk3Ljk5Mjk2IDI2MS4zNTU1MiA3OTUuODkzNzYgMjU5LjgyOTc2IDc5MS40MzkzNiAyNTkuMjk3MjggNzg5LjEzNTM2IDI1OC42MjE0NCA3ODYuNTc1MzYgMjU4LjYyMTQ0IDc4NC4yMDk5MiAyNTkuMjk3MjggNzgxLjUzNzI4IDI1OS4yOTcyOCA3NzguODg1MTIgMjU5LjgyOTc2IDc3Ni4yMzI5NiAyNTkuODI5NzYgNzc0LjYxNTA0IDI1OS44Mjk3NiA3NzAuODc3NDQgMjYwLjA4NTc2IDc2OC4wNTEyIDI2MS4zNTU1MiA3NjQuODE1MzYgMjYyLjQxMDI0IDc2MS41Nzk1MiAyNjQuMzI1MTIgNzU3LjY3ODA4IDI2NS43MjggNzU2LjE3MjggMjY2Ljg4NTEyIDc1NC40MzIgMjY5LjkwNTkyIDc1MC43MzUzNiAyNzIuMzEyMzIgNzQ4LjgzMDcyIDI3NC41ODU2IDc0Ny40OTk1MiAyNzYuNjg0OCA3NDUuODA5OTIgMjgwLjAwMjU2IDc0NC43NTUyIDI4Mi42NjQ5NiA3NDMuMTM3MjggMjg1Ljk4MjcyIDc0MS40MjcyIDI4OS43NjEyOCA3NDAuMjkwNTYgMjkzLjU2MDMyIDczOS4xMzM0NCAyOTcuOTYzNTIgNzM4LjE3MDg4IDMwMi4xMzEyIDczNy42MTc5MiAzMDcuMDc3MTIgNzM2Ljk3MjggMzEyLjQ0Mjg4IDczNi41NjMyIDMxMy44MzU1MiA3MzYuMTAyNCAzMTQuMTQyNzIgNzM2LjEwMjQgMzE0LjgxODU2IDczNS41Mjg5NiAzMTQuODE4NTYgNzM0Ljg3MzYgMzEzLjgzNTUyIDczMy41NDI0IDMxMC45ODg4IDczMi4xOTA3MiAzMDMuODcyIDcyNi4wMjYyNCAyOTkuMDg5OTIgNzIyLjIxNjk2IDI5My41NjAzMiA3MTcuMzczNDQgMjg3Ljk4OTc2IDcxMS45NTY0OCAyODIuMTkzOTIgNzA1LjAzNDI0IDI3NS41MTc0NCA2OTcuMjMxMzYgMjczLjAyOTEyIDY5My4wMTI0OCAyNjkuNzMxODQgNjg4LjY1MDI0IDI2Ni44ODUxMiA2ODMuNjEyMTYgMjY0LjMyNTEyIDY3OC4xMDMwNCAyNjAuODc0MjQgNjcyLjg2MDE2IDI1OC42MjE0NCA2NjYuODggMjU1LjkzODU2IDY2MC45MTAwOCAyNTMuMjU1NjggNjU0LjI1NDA4IDI1MS4zMTAwOCA2NDcuODc0NTYgMjQ5LjQ1NjY0IDYzOS45ODk3NiAyNDguOTAzNjggNjM5LjcwMzA0IDI0OC4zNDA0OCA2MzkuNzAzMDQgMjQ4LjA1Mzc2IDYzOS4xMzk4NCAyNDcuMzY3NjggNjM5LjEzOTg0IDI0Ni4yNDEyOCA2MzkuNzAzMDQgMjQ1LjY3ODA4IDYzOS45ODk3NiAyNDQuODk5ODQgNjQxLjMxMDcyIDI0NC42MjMzNiA2NDIuOTE4NCAyNDQuMDM5NjggNjQ0LjM1MiAyNDMuMDI1OTIgNjQ2LjczNzkyIDIzOS43Njk2IDY1Mi41MzM3NiAyMzguMDggNjU2LjA0NjA4IDIzNS4zOTcxMiA2NTkuMTA3ODQgMjMyLjU1MDQgNjYyLjc5NDI0IDIyOS40MDY3MiA2NjYuODggMjI2LjA4ODk2IDY3MC41MDQ5NiAyMjIuMTg3NTIgNjc0LjAxNzI4IDIxOC41ODMwNCA2NzcuMzE0NTYgMjE0LjU4OTQ0IDY3OS45MzYgMjEwLjIyNzIgNjgyLjY3MDA4IDIwNi4wMjg4IDY4NC4yOTgyNCAyMDEuMDgyODggNjg1LjUzNzI4IDE5Ni4yMjkxMiA2ODYuMDA4MzIgMTk1Ljc1ODA4IDY4Ni4wMDgzMiAxOTUuMDgyMjQgNjg2LjAwODMyIDE5My45NjYwOCA2ODUuNTM3MjggMTkzLjA4NTQ0IDY4My42MTIxNiAxOTEuNjYyMDggNjgyLjY3MDA4IDE4OS43OTg0IDY3OC4xMDMwNCAxODguNjMxMDQgNjc1LjYzNTIgMTg3LjM4MTc2IDY3Mi4wOTIxNiAxODYuMzQ3NTIgNjY4LjQxNiAxODUuNzk0NTYgNjY0Ljc5MTA0IDE4NC4yNTg1NiA2NTYuNTM3NiAxODMuNjc0ODggNjUxLjY3MzYgMTgzLjY3NDg4IDY0Ni43Mzc5MiAxODMuNjc0ODggNjM1LjcxOTY4IDE4NC4yNTg1NiA2MjMuODEwNTYgMTg1LjIyMTEyIDYxNy43MjggMTg2LjM0NzUyIDYxMS40NjExMiAxODcuMzgxNzYgNjA0LjcxMjk2IDE4OS4yMTQ3MiA1OTguNDM1ODQgMTkxLjI3Mjk2IDU5MS4yMDY0IDE5My4zOTI2NCA1ODQuMTYxMjggMTk2LjIyOTEyIDU3Ni45MTEzNiAxOTguOTAxNzYgNTY5Ljk5OTM2IDIwMi41OTg0IDU2Mi45ODQ5NiAyMDYuMDI4OCA1NTUuMzc2NjQgMjEwLjIyNzIgNTQ4LjIzOTM2IDIxNS4xNjI4OCA1NDAuNTM4ODggMjIwLjE4MDQ4IDUzMy42MTY2NCAyMjUuNDIzMzYgNTI1LjkxNjE2IDIyOS43OTU4NCA1MjAuNTUwNCAyMzUuMzk3MTIgNTE0LjQwNjQgMjQxLjI5NTM2IDUwOC4yMTEyIDI0NC4wMzk2OCA1MDUuMjYyMDggMjQ3LjM2NzY4IDUwMS45NDQzMiAyNTIuMjAwOTYgNDk3Ljc1NjE2IDI1Ny4xNjczNiA0OTMuNDg2MDggMjY1LjI0NjcyIDQ4Ni4yNDY0IDI3MS4zMzk1MiA0ODEuNzkyWiIgcC1pZD0iMzA4OSIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjwvc3ZnPg==) no-repeat 2px;
-	    background-size: 27%;
-	
-	}
-	.wx a{
-	    /*top: -9px;*/
-	    line-height: 22px;
-	    background: #2a84df ;
-	    background-size: 27%;
-	
-	}
-	/*.call a:hover{*/
-	/*width: 198px;*/
-	/*}*/
-	.gd {
-	    background: rgba(0, 0, 0, 0.26) url(images/gd.svg?2) no-repeat center;
-	    background-size: 32px;
-	    color: white;
-	}
-	.img-p:hover {
-	    color: #36b7e6;
-	    transition: linear 0.3s;
-	}
-	#quey2 p{
-	    font-size: 12px;
-	    text-align: center;
-	}
-	.rightdiv a{
-	    color: #fff;
-	}
+    /*---foot---*/
+    .foot {
+        width:100%;
+        background:#212930;
+    }
+    .foot-con {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 32px;
+    }
+    .foot-con dl  {
+        width: 15%;
+        float: left;
+        color: #fff;
+        padding-left: 3%;
+        /*	margin: 10px 96px;*/
+    }
+    .foot-con dl dt {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .foot-con dl dd a {
+        font-size: 12px;
+        color: #7a889c;
+        line-height: 24px;
+    }
+    .foot-con dl dd a:hover {
+        color: #36b7e6;
+        transition: linear 0.3s;
+    }
+    .contact {
+        width:100%;
+        border-top: 1px solid #2c363f;
+        margin-top: 24px;
+    }
+    .contact-con {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 32px 0;
+    }
+    .contact-con dl {
+        width: 30.333%;
+        padding-left: 3%;
+        float: left;
+        color: #7a889c;
+        /*	margin: 0 70px;*/
+    }
+    .contact-con dl.location dd{
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .contact-con dl.w-chat{
+        text-align: center;
+    }
+    .contact-con dl dd.img-p {
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .contact-con dl dt.call-p {
+        font-size: 18px;
+        margin-top: 32px;
+    }
+    .contact-con dl dd.call-n{
+        font-size: 36px;
+        font-style: italic;
+        color: #e8de3a;
+        line-height: 44px;
+    }
+    .contact-con dl dd.call-pho span{
+        color: #e8de3a;
+    }
+    .footer {
+        width: 100%;
+        height: 68px;
+        background: #1c2227;
+    }
+    .footer-con {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 18px;
+    }
+    .footer-con p {
+        font-size: 12px;
+        text-align: center;
+        color: #7a889c;
+    }
+    /*---fix---*/
+    .footer-con {
+        width: 1200px;
+        margin: 0 auto;
+        padding:  20px 0 1px 0;
+    }
+    .rwen ,.cqrww{
+        text-align: left;
+        display: inline-block;
+        line-height: 25px;
+        float: left;
+        width: 49%;
+        height: 50px;
+        border: 1px solid  #2c363f;
+        text-indent: 157px;
+        color: #7a889c;
+    }
+    .cqrww{
+        border-left: 0px;
+    }
+    .footer-con p {
+        line-height: 25px;
+    }
+
+    .call a{
+        /*top: -9px;*/
+        line-height: 22px;
+        background: #2a84df url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNDkzODc2MjM2OTQ1IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjIzNzQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNOTIxLjYgNzQyLjRDOTIxLjYgODk2IDg1MS4yIDg5NiA1MTIgODk2Yy0zMzkuMiAwLTQwOS42IDAtNDA5LjYtMTUzLjZDMTAyLjQgNTc2IDI4OCAyNDMuMiA1MTIgMjQzLjIgNzM2IDI0My4yIDkyMS42IDU3NiA5MjEuNiA3NDIuNEw5MjEuNiA3NDIuNCA5MjEuNiA3NDIuNHpNNTEyIDMxMy42Yy05NiAwLTE3Mi44IDc2LjgtMTcyLjggMTcyLjggMCA5NiA3Ni44IDE3Mi44IDE3Mi44IDE3Mi44IDk2IDAgMTcyLjgtNzYuOCAxNzIuOC0xNzIuOEM2ODQuOCAzOTAuNCA2MDggMzEzLjYgNTEyIDMxMy42TDUxMiAzMTMuNiA1MTIgMzEzLjZ6TTE1My42IDQ0MS42YzcwLjQtMTE1LjIgMTkyLTIzNi44IDM1OC40LTIzNi44IDE2Ni40IDAgMzAwLjggMTM0LjQgMzU4LjQgMjM2LjggMzIgNTEuMiA4OS42IDQ0LjggMTE1LjIgMCAxOS4yLTMyIDcwLjQtMzIwLTQ3My42LTMyMC01NDQgMC00OTIuOCAyOTQuNC00NzMuNiAzMjBDNzYuOCA0OTIuOCAxNDAuOCA0NjcuMiAxNTMuNiA0NDEuNkwxNTMuNiA0NDEuNiAxNTMuNiA0NDEuNnoiIHAtaWQ9IjIzNzUiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48L3N2Zz4=) no-repeat 9px;
+        background-size: 18%;
+
+    }
+    .qq a{
+        /*top: -9px;*/
+        cursor: pointer;
+        line-height: 22px;
+        background: #2a84df url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNDkzODc3OTU1MjUxIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMwODgiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNMjczLjUxMDQgNDgwLjE3NDA4IDI3Mi4zMTIzMiA0NzYuNDQ2NzIgMjcxLjMzOTUyIDQ3MS42MDMyIDI3MC42OTQ0IDQ2OC45NTEwNCAyNzAuNjk0NCA0NjUuNjEyOCAyNzAuNjk0NCA0NjEuNjI5NDQgMjcwLjY5NDQgNDU4LjAyNDk2IDI3MS44NTE1MiA0NTMuNzI0MTYgMjczLjAyOTEyIDQ0OS4xNzc2IDI3NC41ODU2IDQ0NC40MDU3NiAyNzYuNjg0OCA0MzkuMDkxMiAyNzkuNDM5MzYgNDMzLjU3MTg0IDI4My4zMzA1NiA0MjguMDQyMjQgMjgzLjMzMDU2IDQyNC4xNzE1MiAyODMuNzA5NDQgNDIwLjU0NjU2IDI4NC4zMTM2IDQxNS42MjExMiAyODUuOTgyNzIgNDEwLjA4MTI4IDI4Ny41MTg3MiA0MDQuMTAxMTIgMjg4Ljc0NzUyIDQwMS4zNTY4IDI5MC4xNjA2NCAzOTguNzk2OCAyOTEuOTgzMzYgMzk1Ljk1MDA4IDI5My45Njk5MiAzOTMuODMwNCAyOTMuOTY5OTIgMzg5LjkzOTIgMjkzLjk2OTkyIDM4NS41NjY3MiAyOTMuOTY5OTIgMzgwLjE2IDI5NS4xMTY4IDM3My4xMTQ4OCAyOTYuMjczOTIgMzY0LjkzMzEyIDI5OC4zMzIxNiAzNTUuMTQzNjggMzAxLjE2ODY0IDM0NC45NTQ4OCAzMDMuMjc4MDggMzM5LjM1MzYgMzA1LjM2NzA0IDMzMy4yNjA4IDMwNy42NjA4IDMyNy41Nzc2IDMxMC40MDUxMiAzMjEuNDg0OCAzMTMuMjAwNjQgMzE0LjgxODU2IDMxNi40MTYgMzA4LjU3MjE2IDMyMC4wMzA3MiAzMDEuOTA1OTIgMzI0LjU4NzUyIDI5NS4yNDk5MiAzMjYuNjk2OTYgMjkxLjQzMDQgMzI4LjkzOTUyIDI4OC4zMDcyIDMzMy44MjQgMjgxLjI2MjA4IDMzOC44NTE4NCAyNzQuMjM3NDQgMzQ0LjU1NTUyIDI2Ny4wMDggMzUwLjY2ODggMjU5Ljk3MzEyIDM1Ny4zMDQzMiAyNTMuMDQwNjQgMzY0LjIyNjU2IDI0NS45MTM2IDM3Mi42MDI4OCAyMzguMjIzMzYgMzc3LjkxNzQ0IDIzMy41NDM2OCAzODQuMzk5MzYgMjI4LjQ5NTM2IDM5MC45NzM0NCAyMjQuMDQwOTYgMzk4LjA4IDIxOS43NjA2NCA0MDQuOTEwMDggMjE1Ljk1MTM2IDQxMi42MTA1NiAyMTIuNzk3NDQgNDIwLjc5MjMyIDIwOC45MTY0OCA0MjguOTIyODggMjA2LjI1NDA4IDQzNy4wMzI5NiAyMDMuNDg5MjggNDQ1Ljc5ODQgMjAwLjc0NDk2IDQ1NC41NTM2IDE5OC42NTYgNDYzLjc1OTM2IDE5Ni45MTUyIDQ3My4wOTgyNCAxOTUuNDA5OTIgNDgyLjMxNDI0IDE5NC4xODExMiA0OTEuNTIgMTkyLjkyMTYgNTAxLjM0MDE2IDE5Mi4zODkxMiA1MTAuNjc5MDQgMTkyLjM4OTEyIDUyMC4zMzUzNiAxOTIuMzg5MTIgNTMwLjM1MDA4IDE5Mi4zODkxMiA1NDAuMDE2NjQgMTkzLjYwNzY4IDU0OS43MzQ0IDE5NC43NjQ4IDU1OS42MzY0OCAxOTUuNzk5MDQgNTY4LjgzMiAxOTguMDEwODggNTc4LjUzOTUyIDIwMC4wNzkzNiA1ODcuNjUzMTIgMjAyLjQ1NTA0IDU5Ny42MzcxMiAyMDUuMTA3MiA2MDYuNzcxMiAyMDguMzQzMDQgNjE1LjUxNjE2IDIxMi4wMzk2OCA2MjQuODU1MDQgMjE1Ljk1MTM2IDYzMy4zNzQ3MiAyMjAuMjIxNDQgNjQxLjY1ODg4IDIyNC45NzI4IDY0OS43NzkyIDIzMC4yMDU0NCA2NTYuNzczMTIgMjM1LjA2OTQ0IDY2MC4wMTkyIDIzNy44MTM3NiA2NjMuNDE4ODggMjM5LjgyMDggNjY5LjkxMTA0IDI0NS4zMjk5MiA2NzUuMzc5MiAyNTAuNjU0NzIgNjgwLjgzNzEyIDI1Ni4xNjM4NCA2ODYuMTUxNjggMjYyLjI0NjQgNjkwLjUzNDQgMjY4LjE0NDY0IDY5NS43NTY4IDI3NC4yMzc0NCA2OTkuMzkyIDI4MC43ODA4IDcwMy4wNzg0IDI4Ni41OTcxMiA3MDYuOTkwMDggMjkzLjM2NTc2IDcxMC4yMzYxNiAyOTkuMjUzNzYgNzE1LjY5NDA4IDMxMS43MTU4NCA3MTguMzc2OTYgMzE4LjE1NjggNzIwLjQ3NjE2IDMyNC4xMjY3MiA3MjIuNTc1MzYgMzMwLjYwODY0IDcyNC40NTk1MiAzMzYuNzAxNDQgNzI1Ljc3MDI0IDM0MS45NDQzMiA3MjcuNDcwMDggMzQ4LjEwODggNzMwLjQ0OTkyIDM1OS4xMTY4IDczMi4zNTQ1NiAzNjguNzUyNjQgNzMzLjU5MzYgMzc4LjA3MTA0IDczNC42NTg1NiAzODUuNTY2NzIgNzM2LjMzNzkyIDM5Ni45ODQzMiA3MzYuNzE2OCAzOTguNzk2OCA3MzguMDU4MjQgNDAwLjg1NTA0IDc0MS42NzI5NiA0MDYuNzYzNTIgNzQzLjk5NzQ0IDQxMC43NjczNiA3NDYuMDU1NjggNDE0LjkzNTA0IDc0OC42NzcxMiA0MTkuMzk5NjggNzUwLjk5MTM2IDQyNC43NTUyIDc1Mi40OTY2NCA0MzAuMjMzNiA3NTQuMTM1MDQgNDM2LjI0NDQ4IDc1NS4zNzQwOCA0NDIuNDA4OTYgNzU1LjkzNzI4IDQ0NS40NCA3NTYuNDU5NTIgNDQ5LjE3NzYgNzU2LjQ1OTUyIDQ1Mi40MjM2OCA3NTUuOTM3MjggNDU1LjYzOTA0IDc1NS45MzcyOCA0NTkuNjQyODggNzU0Ljk5NTIgNDYzLjUyMzg0IDc1My4yNzQ4OCA0NzEuMDQgNzUxLjI5ODU2IDQ3NC44MzkwNCA3NDkuODM0MjQgNDc5LjEwOTEyIDc0OS44MzQyNCA0ODAuMTc0MDggNzUwLjUzMDU2IDQ4MS40OTUwNCA3NTIuNDk2NjQgNDg0LjYxODI0IDc2MS4wNTcyOCA0OTcuMjg1MTIgNzY3LjgxNTY4IDUwNi43OTgwOCA3NzEuMDUxNTIgNTEzLjE0Njg4IDc3NS40MTM3NiA1MjAuMDk5ODQgNzc5LjIxMjggNTI3LjcxODQgNzgzLjU5NTUyIDUzNS44NTkyIDc4Ny45NzgyNCA1NDUuMDEzNzYgNzkyLjkxMzkyIDU1NS4zNzY2NCA3OTUuNjk5MiA1NjEuNzI1NDQgNzk4LjIzODcyIDU2Ny45MzA4OCA4MDAuNDMwMDggNTc0LjQ3NDI0IDgwMi41OTA3MiA1ODAuMzYyMjQgODA0LjIzOTM2IDU4Ni41NDcyIDgwNS45MTg3MiA1OTIuMzUzMjggODA4LjAzODQgNjAzLjY3ODcyIDgwOS43MTc3NiA2MTUuMjQ5OTIgODEwLjg3NDg4IDYyNS41MTA0IDgxMC44NzQ4OCA2MzEuMTExNjggODEwLjg3NDg4IDYzNS43MTk2OCA4MTAuODc0ODggNjM5Ljk4OTc2IDgxMC4wOTY2NCA2NDUuMTIgODA4Ljk5MDcyIDY1My45Nzc2IDgwNy40NzUyIDY2MS45MzQwOCA4MDUuMTIgNjY5LjE1MzI4IDgwNC4yMzkzNiA2NzIuMDkyMTYgODAyLjU5MDcyIDY3NS42MzUyIDgwMS4yMTg1NiA2NzguMTAzMDQgNzk5LjM3NTM2IDY4MS4xNDQzMiA3OTcuNzU3NDQgNjgzLjA1OTIgNzk1LjY5OTIgNjg1LjUzNzI4IDc5My44NTYgNjg3LjUzNDA4IDc5MS44ODk5MiA2ODkuMjQ0MTYgNzg5LjUzNDcyIDY5MC4yNzg0IDc4Ny40MTUwNCA2OTEuMzEyNjQgNzg1LjY3NDI0IDY5MS44ODYwOCA3ODQuMTU4NzIgNjkxLjg4NjA4IDc4My4wMTE4NCA2OTEuODg2MDggNzgxLjMxMiA2OTEuMzEyNjQgNzc4LjA3NjE2IDY4OS43MTUyIDc3Ni41OTEzNiA2ODguNjUwMjQgNzc1LjAzNDg4IDY4Ny41MzQwOCA3NzMuMzM1MDQgNjg2LjAwODMyIDc3MS42MTQ3MiA2ODQuMjk4MjQgNzY4Ljc3ODI0IDY4MS4xNDQzMiA3NjUuNDE5NTIgNjc2LjY4OTkyIDc2Mi43Nzc2IDY3Mi4wOTIxNiA3NjAuMTM1NjggNjY4LjQxNiA3NTcuNTU1MiA2NjQuMTM1NjggNzUzLjkyIDY1Ni41Mzc2IDc0OS44MzQyNCA2NDguNjMyMzIgNzQ5LjM1Mjk2IDY0OC4zNTU4NCA3NDguNjc3MTIgNjQ4LjM1NTg0IDc0Ny4wMTgyNCA2NDkuNTk0ODggNzQ2LjA1NTY4IDY1MS42NzM2IDc0NC40NTgyNCA2NTQuMjU0MDggNzQxLjY3Mjk2IDY2MS45MzQwOCA3MzcuNDc0NTYgNjcyLjg2MDE2IDczMi4wOTg1NiA2ODYuMDA4MzIgNzI4LjA1Mzc2IDY5Mi41NjE5MiA3MjMuODE0NCA2OTkuNDAyMjQgNzE4Ljc3NjMyIDcwNy4wOTI0OCA3MTMuNDMxMDQgNzE0LjYxODg4IDcxMC42OTY5NiA3MTguMDI4OCA3MDcuMzc5MiA3MjEuNzQ1OTIgNjk5Ljc1MDQgNzI5LjI0MTYgNzAwLjQxNiA3MjkuOTE3NDQgNzAxLjQ1MDI0IDczMC45OTI2NCA3MDUuMjU5NTIgNzMzLjIyNDk2IDcyMS4xMzE1MiA3NDAuODUzNzYgNzI4LjA1Mzc2IDc0NC43NTUyIDczNC42NTg1NiA3NDguNTQ0IDc0MS4xOTE2OCA3NTMuMzE1ODQgNzQ3LjAxODI0IDc1OC4yMzEwNCA3NDkuODM0MjQgNzYwLjQ1MzEyIDc1MS45NTM5MiA3NjMuMDEzMTIgNzU0LjEzNTA0IDc2NS45ODI3MiA3NTUuOTM3MjggNzY5LjE5ODA4IDc1Ni45MTAwOCA3NzEuODcwNzIgNzU4LjA5NzkyIDc3NS4wNzU4NCA3NTguNjA5OTIgNzc3Ljg1MDg4IDc1OS4xNzMxMiA3ODEuMDg2NzIgNzU4LjYwOTkyIDc4My4yNTc2IDc1OC42MDk5MiA3ODUuNDU5MiA3NTguMDk3OTIgNzg3LjczMjQ4IDc1Ni45MTAwOCA3ODkuODExMiA3NTYuNDU5NTIgNzkxLjQzOTM2IDc1NS4zNzQwOCA3OTMuNDE1NjggNzUyLjQ5NjY0IDc5Ny4zMzc2IDc0OS44MzQyNCA4MDAuNDgxMjggNzQ3Ljc3NiA4MDIuODM2NDggNzQ2LjA1NTY4IDgwNC41NzcyOCA3NDEuNjcyOTYgODA3Ljc3MjE2IDczNi43MTY4IDgxMC41NTc0NCA3MzEuNDMyOTYgODEzLjIxOTg0IDcyNS43NzAyNCA4MTUuNzc5ODQgNzE5LjQ1MjE2IDgxOC4yNTc5MiA3MTYuMDUyNDggODE5LjI5MjE2IDcxMy4wNzI2NCA4MjAuMTMxODQgNzA1LjczMDU2IDgyMS44NDE5MiA2OTguMTUyOTYgODIzLjQ3MDA4IDY5MC41MzQ0IDgyNS4wODggNjgyLjI1MDI0IDgyNi40Mzk2OCA2NzMuNzEwMDggODI2Ljc5ODA4IDY2NC45NTQ4OCA4MjcuODUyOCA2NTYuMjkxODQgODI3Ljg1MjggNjQ3LjE3ODI0IDgyNy44NTI4IDYzNy43Nzc5MiA4MjcuODUyOCA2MjcuOTc4MjQgODI3LjI3OTM2IDYxOC44NTQ0IDgyNi40Mzk2OCA2MDkuMDEzNzYgODI1LjA4OCA1OTkuMjU1MDQgODI0LjA0MzUyIDU4OC45NzQwOCA4MjIuNjA5OTIgNTc5LjAxMDU2IDgyMC4xMzE4NCA1NjkuMjkyOCA4MTguMjU3OTIgNTU5LjYzNjQ4IDgxNS40OTMxMiA1NDkuNzM0NCA4MTEuOTUwMDggNTQwLjAxNjY0IDgwOS4wMjE0NCA1MzQuODk2NjQgODA3LjMxMTM2IDUzMC4zNTAwOCA4MDUuNjkzNDQgNTI3LjQ3MjY0IDgwNC41NzcyOCA1MjQuNjE1NjggODAzLjk3MzEyIDUyMC45Mzk1MiA4MDMuOTczMTIgNTE2LjUzNjMyIDgwMy45NzMxMiA1MDcuMTk3NDQgODAzLjMxNzc2IDUwMi40NzY4IDgwMi44MzY0OCA0OTYuMzk0MjQgODAyLjE2MDY0IDQ5Mi40OTI4IDgwNS42OTM0NCA0ODcuMTY4IDgwOS4wMjE0NCA0NzkuOTQ4OCA4MTIuNTMzNzYgNDcxLjk2MTYgODE2LjkxNjQ4IDQ2Ny4xMDc4NCA4MTkuMjkyMTYgNDYyLjAzOTA0IDgyMS4xNzYzMiA0NTAuODQ2NzIgODI1Ljc1MzYgNDQ0Ljc2NDE2IDgyNy4yNzkzNiA0MzguMzg0NjQgODI4Ljk5OTY4IDQyOS41MzcyOCA4MzAuNzIgNDIzLjk5NzQ0IDgzMS4xNTAwOCA0MTguMTQwMTYgODMxLjY1MTg0IDQxMi4wMjY4OCA4MzIuMzI3NjggNDA0LjkxMDA4IDgzMi41OTM5MiAzOTguMDggODMyLjU5MzkyIDM5MC45NzM0NCA4MzIuNTkzOTIgMzc1LjgzODcyIDgzMi41OTM5MiAzNTkuNDI0IDgzMi4zMjc2OCAzNDMuNDgwMzIgODMwLjcyIDMzNS40MTEyIDgyOS41NzMxMiAzMjcuNjE4NTYgODI4LjQxNiAzMjAuMDMwNzIgODI3LjI3OTM2IDMxMi40NDI4OCA4MjUuNzUzNiAzMDUuMzY3MDQgODIzLjQ3MDA4IDI5OC4zMzIxNiA4MjEuODQxOTIgMjkxLjk4MzM2IDgxOS4yOTIxNiAyODUuOTgyNzIgODE2LjkxNjQ4IDI4MC4zODE0NCA4MTQuMjQzODQgMjc1LjUxNzQ0IDgxMS4zMjU0NCAyNzAuNjk0NCA4MDcuNzcyMTYgMjY5LjA0NTc2IDgwNi4wNTE4NCAyNjYuODg1MTIgODAzLjk3MzEyIDI2NS4yNDY3MiA4MDIuMTYwNjQgMjYzLjc3MjE2IDgwMC4wNzE2OCAyNjIuNDEwMjQgNzk3Ljk5Mjk2IDI2MS4zNTU1MiA3OTUuODkzNzYgMjU5LjgyOTc2IDc5MS40MzkzNiAyNTkuMjk3MjggNzg5LjEzNTM2IDI1OC42MjE0NCA3ODYuNTc1MzYgMjU4LjYyMTQ0IDc4NC4yMDk5MiAyNTkuMjk3MjggNzgxLjUzNzI4IDI1OS4yOTcyOCA3NzguODg1MTIgMjU5LjgyOTc2IDc3Ni4yMzI5NiAyNTkuODI5NzYgNzc0LjYxNTA0IDI1OS44Mjk3NiA3NzAuODc3NDQgMjYwLjA4NTc2IDc2OC4wNTEyIDI2MS4zNTU1MiA3NjQuODE1MzYgMjYyLjQxMDI0IDc2MS41Nzk1MiAyNjQuMzI1MTIgNzU3LjY3ODA4IDI2NS43MjggNzU2LjE3MjggMjY2Ljg4NTEyIDc1NC40MzIgMjY5LjkwNTkyIDc1MC43MzUzNiAyNzIuMzEyMzIgNzQ4LjgzMDcyIDI3NC41ODU2IDc0Ny40OTk1MiAyNzYuNjg0OCA3NDUuODA5OTIgMjgwLjAwMjU2IDc0NC43NTUyIDI4Mi42NjQ5NiA3NDMuMTM3MjggMjg1Ljk4MjcyIDc0MS40MjcyIDI4OS43NjEyOCA3NDAuMjkwNTYgMjkzLjU2MDMyIDczOS4xMzM0NCAyOTcuOTYzNTIgNzM4LjE3MDg4IDMwMi4xMzEyIDczNy42MTc5MiAzMDcuMDc3MTIgNzM2Ljk3MjggMzEyLjQ0Mjg4IDczNi41NjMyIDMxMy44MzU1MiA3MzYuMTAyNCAzMTQuMTQyNzIgNzM2LjEwMjQgMzE0LjgxODU2IDczNS41Mjg5NiAzMTQuODE4NTYgNzM0Ljg3MzYgMzEzLjgzNTUyIDczMy41NDI0IDMxMC45ODg4IDczMi4xOTA3MiAzMDMuODcyIDcyNi4wMjYyNCAyOTkuMDg5OTIgNzIyLjIxNjk2IDI5My41NjAzMiA3MTcuMzczNDQgMjg3Ljk4OTc2IDcxMS45NTY0OCAyODIuMTkzOTIgNzA1LjAzNDI0IDI3NS41MTc0NCA2OTcuMjMxMzYgMjczLjAyOTEyIDY5My4wMTI0OCAyNjkuNzMxODQgNjg4LjY1MDI0IDI2Ni44ODUxMiA2ODMuNjEyMTYgMjY0LjMyNTEyIDY3OC4xMDMwNCAyNjAuODc0MjQgNjcyLjg2MDE2IDI1OC42MjE0NCA2NjYuODggMjU1LjkzODU2IDY2MC45MTAwOCAyNTMuMjU1NjggNjU0LjI1NDA4IDI1MS4zMTAwOCA2NDcuODc0NTYgMjQ5LjQ1NjY0IDYzOS45ODk3NiAyNDguOTAzNjggNjM5LjcwMzA0IDI0OC4zNDA0OCA2MzkuNzAzMDQgMjQ4LjA1Mzc2IDYzOS4xMzk4NCAyNDcuMzY3NjggNjM5LjEzOTg0IDI0Ni4yNDEyOCA2MzkuNzAzMDQgMjQ1LjY3ODA4IDYzOS45ODk3NiAyNDQuODk5ODQgNjQxLjMxMDcyIDI0NC42MjMzNiA2NDIuOTE4NCAyNDQuMDM5NjggNjQ0LjM1MiAyNDMuMDI1OTIgNjQ2LjczNzkyIDIzOS43Njk2IDY1Mi41MzM3NiAyMzguMDggNjU2LjA0NjA4IDIzNS4zOTcxMiA2NTkuMTA3ODQgMjMyLjU1MDQgNjYyLjc5NDI0IDIyOS40MDY3MiA2NjYuODggMjI2LjA4ODk2IDY3MC41MDQ5NiAyMjIuMTg3NTIgNjc0LjAxNzI4IDIxOC41ODMwNCA2NzcuMzE0NTYgMjE0LjU4OTQ0IDY3OS45MzYgMjEwLjIyNzIgNjgyLjY3MDA4IDIwNi4wMjg4IDY4NC4yOTgyNCAyMDEuMDgyODggNjg1LjUzNzI4IDE5Ni4yMjkxMiA2ODYuMDA4MzIgMTk1Ljc1ODA4IDY4Ni4wMDgzMiAxOTUuMDgyMjQgNjg2LjAwODMyIDE5My45NjYwOCA2ODUuNTM3MjggMTkzLjA4NTQ0IDY4My42MTIxNiAxOTEuNjYyMDggNjgyLjY3MDA4IDE4OS43OTg0IDY3OC4xMDMwNCAxODguNjMxMDQgNjc1LjYzNTIgMTg3LjM4MTc2IDY3Mi4wOTIxNiAxODYuMzQ3NTIgNjY4LjQxNiAxODUuNzk0NTYgNjY0Ljc5MTA0IDE4NC4yNTg1NiA2NTYuNTM3NiAxODMuNjc0ODggNjUxLjY3MzYgMTgzLjY3NDg4IDY0Ni43Mzc5MiAxODMuNjc0ODggNjM1LjcxOTY4IDE4NC4yNTg1NiA2MjMuODEwNTYgMTg1LjIyMTEyIDYxNy43MjggMTg2LjM0NzUyIDYxMS40NjExMiAxODcuMzgxNzYgNjA0LjcxMjk2IDE4OS4yMTQ3MiA1OTguNDM1ODQgMTkxLjI3Mjk2IDU5MS4yMDY0IDE5My4zOTI2NCA1ODQuMTYxMjggMTk2LjIyOTEyIDU3Ni45MTEzNiAxOTguOTAxNzYgNTY5Ljk5OTM2IDIwMi41OTg0IDU2Mi45ODQ5NiAyMDYuMDI4OCA1NTUuMzc2NjQgMjEwLjIyNzIgNTQ4LjIzOTM2IDIxNS4xNjI4OCA1NDAuNTM4ODggMjIwLjE4MDQ4IDUzMy42MTY2NCAyMjUuNDIzMzYgNTI1LjkxNjE2IDIyOS43OTU4NCA1MjAuNTUwNCAyMzUuMzk3MTIgNTE0LjQwNjQgMjQxLjI5NTM2IDUwOC4yMTEyIDI0NC4wMzk2OCA1MDUuMjYyMDggMjQ3LjM2NzY4IDUwMS45NDQzMiAyNTIuMjAwOTYgNDk3Ljc1NjE2IDI1Ny4xNjczNiA0OTMuNDg2MDggMjY1LjI0NjcyIDQ4Ni4yNDY0IDI3MS4zMzk1MiA0ODEuNzkyWiIgcC1pZD0iMzA4OSIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjwvc3ZnPg==) no-repeat 2px;
+        background-size: 27%;
+
+    }
+    .wx a{
+        /*top: -9px;*/
+        line-height: 22px;
+        background: #2a84df ;
+        background-size: 27%;
+
+    }
+    /*.call a:hover{*/
+    /*width: 198px;*/
+    /*}*/
+    .gd {
+        background: rgba(0, 0, 0, 0.26) url(img/gd.svg?2) no-repeat center;
+        background-size: 32px;
+        color: white;
+    }
+    .img-p:hover {
+        color: #36b7e6;
+        transition: linear 0.3s;
+    }
+    #quey2 p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .rightdiv a{
+        color: #fff;
+    }
 
 </style>
 
 <!--page06-->
 <div class="page06">
     <div class="foot">
-
         <div class="contact" style="    margin-top: 14px;padding-bottom: 14px;">
             <div class="footer-con">
-                <p>Copyright © 2014-2019 www.haxmation.com All Rights Reserved </p>
+                <p>Copyright © 2016-2020 www.haxmation.com All Rights Reserved 吉ICP备22010402000271</p>
             </div>
             <div class="contact-con" style="text-indent: 20px; font-size: 12px;padding: 0px 0;">
-                <dd style="    height: 22px;">公司地址：吉林省长春市二道区东环城路5688号-青年创业工厂正茂园区25号楼4C02室</dd>
-<div style="height: 20px;clear: both">
-</div><dl class="location" style="  padding-left: 33%;    text-align: center;"><dt></dt>
-<dd class="ddimg">
-<a href="http://www.cdnet110.com/"><img src="./image/dd02.png"></a>
-<a href="http://www.cdgs.gov.cn/"><img src="./image/dd04.png"></a>
+       
+                    <dd style="    height: 22px;">公司名称：吉林桓轩科技有限公司</dd>
+                    <dd>公司地址：吉林省长春市二道区东环城路5688号-青年创业工厂正茂园区25号楼4C02室</dd>
+                    <dd>E-mail:webmaster@haxmation.com</dd>
+            
+            
+                <div style="height: 20px;clear: both"></div>
+                <dl class="location" style="  padding-left: 33%;    text-align: center;">
+                    <dt></dt>
+
+                    <dd class="ddimg">
+                        
+                        <a href="http://www.cdnet110.com/"><img src="./img/dd02.png"></a>
+                        <a href="http://www.cdgs.gov.cn/"><img src="./img/dd04.png"></a>
                         
                     </dd>
                 </dl>
@@ -541,7 +980,7 @@
             </div>
         </div>
         <!--<div class="footer">-->
-    
+
         <!--</div>-->
     </div>
 </div>
@@ -549,7 +988,46 @@
     $('.quey1').hover(function(){              $('#quey1').show('slow');              $('#quey2').hide('slow');         });         $('.quey2').hover(function(){              $('#quey1').hide('slow');              $('#quey2').show('slow');         });
 </script>
 <!--page06 end-->
-
+<div class="rightdiv">
+    <!---
+    <div class="rightdivs call">
+        <a href="javascript:void(0)">
+            <label style="font-size: 13px;text-indent: 26px;
+    display: inline-block;"> 7*24小时服务热线</label>
+            <br>
+            <label style="text-indent: 26px;
+    display: inline-block;
+    font-size: 18px;">043100000000</label>
+        </a>
+    </div>
+    <div class="rightdivs qq">
+        ##<a onclick="javascript:window.open('tencent://message/?uin=10000&Site=sys.rwen.com&Menu=yes');">
+        <a onclick="javascript:window.open(&#39;http://b.qq.com/webc.htm?new=0&amp;sid=100001&amp;o=www.rwen.com&amp;q=7&#39;, &#39;_blank&#39;, &#39;height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no&#39;);">
+            <label style="font-size: 13px;text-indent: 17px;
+    display: inline-block;">企业QQ咨询</label>
+            <br>
+            <label style="text-indent: 26px;
+    display: inline-block;
+    font-size: 18px; cursor: pointer; ">10000</label>
+        </a>
+    </div>
+    <div class="rightdivs wx">
+        ##<a class="hov" href="javascript:void(0)"></a>
+        <a class="hov" href="javascript:void(0)">
+            <label style="font-size: 13px;text-align: center; display: block;">扫描微信公众号</label>
+            <label style="
+    display: inline-block;
+    font-size: 18px;"><img src="./img/side-er.png"></label>
+        </a>
+    </div>
+-->
+    <div class="rightdivs top"></div>
+    <script type="text/javascript">
+        $(".top").click(function () {
+            $('html,body').animate({'scrollTop': '0'}, '800')
+        });
+    </script>
+</div>
 
 
 <!-- 底部
@@ -563,8 +1041,11 @@
 
  <!-- 用于加载js代码 -->
 <!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
-
+<div class="hidden"><!-- 用于加载统计代码等隐藏元素 -->
+    
+</div>
 
 	<!-- /底部 -->
 
-</body></html>
+</body>
+</html>
